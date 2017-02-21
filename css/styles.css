@@ -1,0 +1,303 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+
+button,
+a {
+    cursor: pointer;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.s-page-container {
+    padding: 20px 0;
+    width: 100%;
+    height: auto;
+}
+
+.s-flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.s-light-font {
+    color: #ffffff;
+    font-weight: lighter;
+}
+
+.s-dark-font {
+    color: #666666;
+    font-weight: lighter;
+}
+
+.s-type1-button {
+    background: purple;
+    border-radius: 4px;
+    width: auto;
+    height: 40px;
+    padding: 0 20px;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.s-type2-button {
+    background: purple;
+    border-radius: 4px;
+    width: 80%;
+    height: 40px;
+    padding: 0 20px;
+    border: 0;
+}
+
+.s-spl-type-button {
+    border-radius: 4px;
+    width: 80%;
+    height: 60px;
+    padding: 0 20px;
+    border: 0;
+}
+
+.s-spl-type-button.green {
+    background-color: #188600;
+}
+
+.s-spl-type-button.red {
+    background-color: #E1163C;
+}
+
+.top-bottom-space {
+    margin: 20px 0;
+}
+
+.s-form-textarea {
+    width: 80%;
+    height: 100px;
+    border-radius: 4px;
+    resize: none;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+}
+
+.s-form-input {
+    width: inherit;
+    height: 40px;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 0 10px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+}
+
+.s-mini-font {
+    font-size: 11px;
+}
+
+.s-small-font {
+    font-size: 12px;
+}
+
+.s-medium-font {
+    font-size: 16px;
+}
+
+.s-big-font {
+    font-size: 20px;
+}
+
+.s-fix-to-bottom {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.s-full-page-overlay {
+    background: linear-gradient(to bottom, #7b4397 0%, #b5238a 59%, #dc2430 87%);
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hide {
+    display: none;
+}
+
+
+/******************* Login **************************/
+
+.s-login-form {
+    margin: auto;
+}
+
+.s-login-form .s-form-input {
+    width: 80%;
+    background-color: transparent;
+    border-width: 0 0 2px 0;
+    border-color: white;
+    border-radius: 0;
+    color: #ffffff;
+    display: inline-block;
+}
+
+.s-login-form button {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    display: inline-block;
+    color: #ffffff;
+}
+
+
+/******************* Login **************************/
+
+
+/******************* Home ************************/
+
+.s-home-event-section {
+    padding: 10px 0;
+    margin: 0 10px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+header {
+    height: 50px;
+    width: 100%;
+    background: linear-gradient(to right, #7b4397 0%, #b5238a 59%, #dc2430 87%);
+}
+
+
+/********************* Home ***********************/
+
+
+/***************** Message ***************************/
+
+.s-user-pic div {
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background: url(../../assets/crew.jpg) center center;
+    background-size: cover;
+}
+
+
+/***************** Message ***************************/
+
+
+/******************** Main ************************/
+
+.s-event-home-main {
+    text-align: center;
+}
+
+.s-event-home-main footer {
+    height: 50px;
+    background-color: purple;
+}
+
+
+/************************ Main ********************/
+
+
+/********************Chat *******************/
+
+.s-chat-wrap {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    position: relative;
+}
+
+.s-chat {
+    list-style-type: none;
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 10px 0;
+}
+
+.s-chat-me {
+    text-align: right;
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+}
+
+.s-chat-you {
+    text-align: left;
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+}
+
+span.s-chat-message {
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.s-chat-me span.s-chat-message {
+    background-color: #eeeeee;
+    color: #222222;
+}
+
+.s-chat-you span.s-chat-message {
+    background-color: #e1163c;
+    color: #ffffff;
+}
+
+span.s-chat-time {
+    font-size: 11px;
+}
+
+.s-chat-me span.s-chat-time {
+    color: #a5a5a5;
+}
+
+.s-chat-you span.s-chat-time {
+    color: #ffffff;
+    opacity: 0.7;
+}
+
+.s-chat-text-wrap {
+    width: 80%;
+    margin: 20px 0;
+}
+
+.s-chat-bottom-wrap {
+    background-color: #ffffff;
+}
+
+.s-chat-text-wrap .s-type1-button {
+    float: right;
+    width: 18%;
+    margin-left: 1%;
+    padding: 0;
+}
+
+.s-chat-text-wrap .s-form-input {
+    width: 80%;
+    border-radius: 4px;
+    margin-right: 1%;
+    margin-left: 0;
+}
+
+
+/********************* Chat *************************/

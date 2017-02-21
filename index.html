@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Safe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
+
+<body>
+    <div class="s-full-page-overlay">
+        <div class="s-icon-big"></div>
+        <form class="s-login-form">
+            <input type="text" class="s-form-input" id="sUsername" name="username" placeholder="Username" />
+            <input type="password" class="s-form-input" id="sPassword" name="password" placeholder="Password" />
+            <button type="button" disabled="disabled" class="s-type1-button s-top-bottom-space">LOGIN</button>
+        </form>
+    </div>
+    <header class="s-flex-center s-light-font hide">
+        <h4>
+  			SAFE
+		</h4>
+        <span class="display-username"></span>
+        <a href="#" class="logout">Logout</a>
+    </header>
+    <div class="s-page-container hide">
+        <section class="s-home-event-section s-flex-center s-dark-font">
+            <span class="title"></span>
+        </section>
+        <!--main page-->
+        <section class="s-event-home-main">
+            <p class="s-flex-center s-dark-font s-small-font"> You appear to be in the area affected by <span class="s-event"></span> </p>
+            <h3 class="s-flex-center s-dark-font s-big-font"> Are you safe? </h3>
+            <div class="s-flex-center top-bottom-space">
+                <button class="s-spl-type-button green s-light-font s-medium-font" routerLink="message">I'm Safe</button>
+            </div>
+            <div class="s-flex-center top-bottom-space">
+                <button class="s-spl-type-button red s-light-font s-medium-font">I'm not Safe</button>
+            </div>
+            <footer class="s-fix-to-bottom">
+                <div class="s-flex-center top-bottom-space">
+                    <a class="s-light-font s-small-font"> I'm not in the area</a>
+                </div>
+            </footer>
+        </section>
+        <!--main page-->
+        <!--message-->
+        <section class="s-home-event-user">
+            <div class="s-user-pic s-flex-center">
+                <div></div>
+            </div>
+            <div>
+                <p class="s-user-name s-flex-center s-dark-font"></p>
+            </div>
+            <div>
+                <p class="s-user-status s-flex-center s-dark-font">
+                    <i></i>
+                    <span>You're marked safe.</span>
+                </p>
+                <div class="s-flex-center">
+                    <button class="s-type1-button s-light-font">Unmark</button>
+                </div>
+            </div>
+            <div class="top-bottom-space">
+                <div class="s-flex-center top-bottom-space">
+                    <textarea class="s-form-textarea" placeholder="Send Message to Admin" id="message"></textarea>
+                </div>
+                <div class="s-flex-center top-bottom-space">
+                    <button class="s-type2-button s-light-font">Send</button>
+                </div>
+            </div>
+        </section>
+        <!--message-->
+        <!--chat page-->
+        <div class="s-chat-wrap">
+            <ul class="s-chat">
+                <li class="s-chat-me">
+                    <span class="s-chat-message"><span class="s-chat-time"></span></span>
+                </li>
+            </ul>
+        </div>
+        <div class="s-fix-to-bottom s-flex-center s-chat-bottom-wrap">
+            <div class="s-chat-text-wrap">
+                <input type="text" class="s-form-input" placeholder="Send Message to Admin" id="message" />
+                <button class="s-type1-button s-light-font send-message">Send</button>
+            </div>
+        </div>
+        <!--chat page-->
+    </div>
+    <script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+            // Registration was successful
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }).catch(function(err) {
+            // registration failed :(
+            console.log('ServiceWorker registration failed: ', err);
+        });
+    }
+    </script>
+</body>
+
+</html>
